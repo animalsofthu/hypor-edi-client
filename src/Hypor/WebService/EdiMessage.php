@@ -6,78 +6,78 @@ class EdiMessage
 {
 
     /**
-     * @var TypeMessageId $MessageId
+     * @var string $MessageId
      */
     protected $MessageId = null;
 
     /**
-     * @var TypeMessageId $ExchangeStatusIdRef
+     * @var string $ExchangeStatusIdRef
      */
     protected $ExchangeStatusIdRef = null;
 
     /**
-     * @var TypeDescription $Description
+     * @var string $Description
      */
     protected $Description = null;
 
     /**
-     * @var TypeEdiVersion $EdiVersion
+     * @var string $EdiVersion
      */
     protected $EdiVersion = null;
 
     /**
-     * @var TypeRelationId $RelationId
+     * @var string $RelationId
      */
     protected $RelationId = null;
 
     /**
-     * @var TypeMessageCode $MessageCode
+     * @var string $MessageCode
      */
     protected $MessageCode = null;
 
     /**
-     * @var TypeDate $CreationDate
+     * @var string $CreationDate
      */
     protected $CreationDate = null;
 
     /**
-     * @var TypeDate $StartDate
+     * @var string $StartDate
      */
     protected $StartDate = null;
 
     /**
-     * @var TypeDate $EndDate
+     * @var string $EndDate
      */
     protected $EndDate = null;
 
     /**
-     * @var TypeApplicationCode $ApplicationCode
+     * @var string $ApplicationCode
      */
     protected $ApplicationCode = null;
 
     /**
-     * @var TypeMessageNumber $MessageNumber
+     * @var string $MessageNumber
      */
     protected $MessageNumber = null;
 
     /**
-     * @var TypeMessageContent $MessageContent
+     * @var string $MessageContent
      */
     protected $MessageContent = null;
 
     /**
-     * @param TypeMessageId $MessageId
-     * @param TypeMessageId $ExchangeStatusIdRef
-     * @param TypeDescription $Description
-     * @param TypeEdiVersion $EdiVersion
-     * @param TypeRelationId $RelationId
-     * @param TypeMessageCode $MessageCode
-     * @param TypeDate $CreationDate
-     * @param TypeDate $StartDate
-     * @param TypeDate $EndDate
-     * @param TypeApplicationCode $ApplicationCode
-     * @param TypeMessageNumber $MessageNumber
-     * @param TypeMessageContent $MessageContent
+     * @param string $MessageId
+     * @param string $ExchangeStatusIdRef
+     * @param string $Description
+     * @param string $EdiVersion
+     * @param string $RelationId
+     * @param string $MessageCode
+     * @param string $CreationDate
+     * @param string $StartDate
+     * @param string $EndDate
+     * @param string $ApplicationCode
+     * @param string $MessageNumber
+     * @param string $MessageContent
      */
     public function __construct($MessageId, $ExchangeStatusIdRef, $Description, $EdiVersion, $RelationId, $MessageCode, $CreationDate, $StartDate, $EndDate, $ApplicationCode, $MessageNumber, $MessageContent)
     {
@@ -96,7 +96,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeMessageId
+     * @return string
      */
     public function getMessageId()
     {
@@ -104,7 +104,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeMessageId $MessageId
+     * @param string $MessageId
      * @return \Hypor\WebService\EdiMessage
      */
     public function setMessageId($MessageId)
@@ -114,7 +114,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeMessageId
+     * @return string
      */
     public function getExchangeStatusIdRef()
     {
@@ -122,7 +122,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeMessageId $ExchangeStatusIdRef
+     * @param string $ExchangeStatusIdRef
      * @return \Hypor\WebService\EdiMessage
      */
     public function setExchangeStatusIdRef($ExchangeStatusIdRef)
@@ -132,7 +132,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeDescription
+     * @return string
      */
     public function getDescription()
     {
@@ -140,7 +140,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeDescription $Description
+     * @param string $Description
      * @return \Hypor\WebService\EdiMessage
      */
     public function setDescription($Description)
@@ -150,7 +150,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeEdiVersion
+     * @return string
      */
     public function getEdiVersion()
     {
@@ -158,7 +158,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeEdiVersion $EdiVersion
+     * @param string $EdiVersion
      * @return \Hypor\WebService\EdiMessage
      */
     public function setEdiVersion($EdiVersion)
@@ -168,7 +168,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeRelationId
+     * @return string
      */
     public function getRelationId()
     {
@@ -176,7 +176,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeRelationId $RelationId
+     * @param string $RelationId
      * @return \Hypor\WebService\EdiMessage
      */
     public function setRelationId($RelationId)
@@ -186,7 +186,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeMessageCode
+     * @return string
      */
     public function getMessageCode()
     {
@@ -194,7 +194,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeMessageCode $MessageCode
+     * @param string $MessageCode
      * @return \Hypor\WebService\EdiMessage
      */
     public function setMessageCode($MessageCode)
@@ -204,7 +204,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeDate
+     * @return string
      */
     public function getCreationDate()
     {
@@ -212,7 +212,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeDate $CreationDate
+     * @param string $CreationDate
      * @return \Hypor\WebService\EdiMessage
      */
     public function setCreationDate($CreationDate)
@@ -222,7 +222,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeDate
+     * @return string
      */
     public function getStartDate()
     {
@@ -230,7 +230,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeDate $StartDate
+     * @param string $StartDate
      * @return \Hypor\WebService\EdiMessage
      */
     public function setStartDate($StartDate)
@@ -240,7 +240,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeDate
+     * @return string
      */
     public function getEndDate()
     {
@@ -248,7 +248,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeDate $EndDate
+     * @param string $EndDate
      * @return \Hypor\WebService\EdiMessage
      */
     public function setEndDate($EndDate)
@@ -258,7 +258,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeApplicationCode
+     * @return string
      */
     public function getApplicationCode()
     {
@@ -266,7 +266,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeApplicationCode $ApplicationCode
+     * @param string $ApplicationCode
      * @return \Hypor\WebService\EdiMessage
      */
     public function setApplicationCode($ApplicationCode)
@@ -276,7 +276,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeMessageNumber
+     * @return string
      */
     public function getMessageNumber()
     {
@@ -284,7 +284,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeMessageNumber $MessageNumber
+     * @param string $MessageNumber
      * @return \Hypor\WebService\EdiMessage
      */
     public function setMessageNumber($MessageNumber)
@@ -294,7 +294,7 @@ class EdiMessage
     }
 
     /**
-     * @return TypeMessageContent
+     * @return string
      */
     public function getMessageContent()
     {
@@ -302,7 +302,7 @@ class EdiMessage
     }
 
     /**
-     * @param TypeMessageContent $MessageContent
+     * @param string $MessageContent
      * @return \Hypor\WebService\EdiMessage
      */
     public function setMessageContent($MessageContent)

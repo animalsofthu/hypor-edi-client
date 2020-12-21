@@ -11,7 +11,7 @@ class TypegetExchangeStatusRequest
     protected $Authenticationtoken = null;
 
     /**
-     * @var TypeEdiVersion $EdiVersion
+     * @var string $EdiVersion
      */
     protected $EdiVersion = null;
 
@@ -22,7 +22,7 @@ class TypegetExchangeStatusRequest
 
     /**
      * @param TypeAuthenticationtoken $Authenticationtoken
-     * @param TypeEdiVersion $EdiVersion
+     * @param string $EdiVersion
      * @param TypeExchangeStatusRequestRelation $Relation
      */
     public function __construct($Authenticationtoken, $EdiVersion, $Relation)
@@ -51,7 +51,7 @@ class TypegetExchangeStatusRequest
     }
 
     /**
-     * @return TypeEdiVersion
+     * @return string
      */
     public function getEdiVersion()
     {
@@ -59,7 +59,7 @@ class TypegetExchangeStatusRequest
     }
 
     /**
-     * @param TypeEdiVersion $EdiVersion
+     * @param string $EdiVersion
      * @return \Hypor\WebService\TypegetExchangeStatusRequest
      */
     public function setEdiVersion($EdiVersion)

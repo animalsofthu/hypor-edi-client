@@ -16,7 +16,7 @@ class TypegetMessageListRequest
     protected $Authenticationtoken = null;
 
     /**
-     * @var TypeEdiVersion $EdiVersion
+     * @var string $EdiVersion
      */
     protected $EdiVersion = null;
 
@@ -28,7 +28,7 @@ class TypegetMessageListRequest
     /**
      * @param TypeMessageHeader $MessageHeader
      * @param TypeAuthenticationtoken $Authenticationtoken
-     * @param TypeEdiVersion $EdiVersion
+     * @param string $EdiVersion
      * @param TypeMessageListRequestRelation $Relation
      */
     public function __construct($MessageHeader, $Authenticationtoken, $EdiVersion, $Relation)
@@ -76,7 +76,7 @@ class TypegetMessageListRequest
     }
 
     /**
-     * @return TypeEdiVersion
+     * @return string
      */
     public function getEdiVersion()
     {
@@ -84,7 +84,7 @@ class TypegetMessageListRequest
     }
 
     /**
-     * @param TypeEdiVersion $EdiVersion
+     * @param string $EdiVersion
      * @return \Hypor\WebService\TypegetMessageListRequest
      */
     public function setEdiVersion($EdiVersion)

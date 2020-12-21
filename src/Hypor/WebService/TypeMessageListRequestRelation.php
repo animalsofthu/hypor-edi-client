@@ -6,22 +6,22 @@ class TypeMessageListRequestRelation
 {
 
     /**
-     * @var TypeRelationId $RelationId
+     * @var string $RelationId
      */
     protected $RelationId = null;
 
     /**
-     * @var TypeUtcDateTime $FromDate
+     * @var string $FromDate
      */
     protected $FromDate = null;
 
     /**
-     * @var TypeUtcDateTime $ToDate
+     * @var string $ToDate
      */
     protected $ToDate = null;
 
     /**
-     * @param TypeRelationId $RelationId
+     * @param string $RelationId
      */
     public function __construct($RelationId)
     {
@@ -29,7 +29,7 @@ class TypeMessageListRequestRelation
     }
 
     /**
-     * @return TypeRelationId
+     * @return string
      */
     public function getRelationId()
     {
@@ -37,7 +37,7 @@ class TypeMessageListRequestRelation
     }
 
     /**
-     * @param TypeRelationId $RelationId
+     * @param string $RelationId
      * @return \Hypor\WebService\TypeMessageListRequestRelation
      */
     public function setRelationId($RelationId)
@@ -47,7 +47,7 @@ class TypeMessageListRequestRelation
     }
 
     /**
-     * @return TypeUtcDateTime
+     * @return string
      */
     public function getFromDate()
     {
@@ -55,7 +55,7 @@ class TypeMessageListRequestRelation
     }
 
     /**
-     * @param TypeUtcDateTime $FromDate
+     * @param string $FromDate
      * @return \Hypor\WebService\TypeMessageListRequestRelation
      */
     public function setFromDate($FromDate)
@@ -65,7 +65,7 @@ class TypeMessageListRequestRelation
     }
 
     /**
-     * @return TypeUtcDateTime
+     * @return string
      */
     public function getToDate()
     {
@@ -73,7 +73,7 @@ class TypeMessageListRequestRelation
     }
 
     /**
-     * @param TypeUtcDateTime $ToDate
+     * @param string $ToDate
      * @return \Hypor\WebService\TypeMessageListRequestRelation
      */
     public function setToDate($ToDate)

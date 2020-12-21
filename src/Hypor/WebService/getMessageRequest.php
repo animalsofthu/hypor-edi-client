@@ -11,13 +11,13 @@ class getMessageRequest
     protected $Authenticationtoken = null;
 
     /**
-     * @var TypeMessageId $MessageId
+     * @var string $MessageId
      */
     protected $MessageId = null;
 
     /**
      * @param TypeAuthenticationtoken $Authenticationtoken
-     * @param TypeMessageId $MessageId
+     * @param string $MessageId
      */
     public function __construct($Authenticationtoken, $MessageId)
     {
@@ -44,7 +44,7 @@ class getMessageRequest
     }
 
     /**
-     * @return TypeMessageId
+     * @return string
      */
     public function getMessageId()
     {
@@ -52,7 +52,7 @@ class getMessageRequest
     }
 
     /**
-     * @param TypeMessageId $MessageId
+     * @param string $MessageId
      * @return \Hypor\WebService\getMessageRequest
      */
     public function setMessageId($MessageId)

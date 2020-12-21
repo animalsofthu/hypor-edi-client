@@ -6,35 +6,35 @@ class TypeMessageHeader
 {
 
     /**
-     * @var TypeMessageId $DialogueMessageId
+     * @var string $DialogueMessageId
      */
     protected $DialogueMessageId = null;
 
     /**
-     * @var TypeRelationId $SenderId
+     * @var string $SenderId
      */
     protected $SenderId = null;
 
     /**
-     * @var TypeRelationId $ReceiverId
+     * @var string $ReceiverId
      */
     protected $ReceiverId = null;
 
     /**
-     * @var TypeUtcDateTime $SendingDateTime
+     * @var string $SendingDateTime
      */
     protected $SendingDateTime = null;
 
     /**
-     * @var TypeMessageId $DialogueMessageIdRef
+     * @var string $DialogueMessageIdRef
      */
     protected $DialogueMessageIdRef = null;
 
     /**
-     * @param TypeMessageId $DialogueMessageId
-     * @param TypeRelationId $SenderId
-     * @param TypeRelationId $ReceiverId
-     * @param TypeUtcDateTime $SendingDateTime
+     * @param string $DialogueMessageId
+     * @param string $SenderId
+     * @param string $ReceiverId
+     * @param string $SendingDateTime
      */
     public function __construct($DialogueMessageId, $SenderId, $ReceiverId, $SendingDateTime)
     {
@@ -45,7 +45,7 @@ class TypeMessageHeader
     }
 
     /**
-     * @return TypeMessageId
+     * @return string
      */
     public function getDialogueMessageId()
     {
@@ -53,7 +53,7 @@ class TypeMessageHeader
     }
 
     /**
-     * @param TypeMessageId $DialogueMessageId
+     * @param string $DialogueMessageId
      * @return \Hypor\WebService\TypeMessageHeader
      */
     public function setDialogueMessageId($DialogueMessageId)
@@ -63,7 +63,7 @@ class TypeMessageHeader
     }
 
     /**
-     * @return TypeRelationId
+     * @return string
      */
     public function getSenderId()
     {
@@ -71,7 +71,7 @@ class TypeMessageHeader
     }
 
     /**
-     * @param TypeRelationId $SenderId
+     * @param string $SenderId
      * @return \Hypor\WebService\TypeMessageHeader
      */
     public function setSenderId($SenderId)
@@ -81,7 +81,7 @@ class TypeMessageHeader
     }
 
     /**
-     * @return TypeRelationId
+     * @return string
      */
     public function getReceiverId()
     {
@@ -89,7 +89,7 @@ class TypeMessageHeader
     }
 
     /**
-     * @param TypeRelationId $ReceiverId
+     * @param string $ReceiverId
      * @return \Hypor\WebService\TypeMessageHeader
      */
     public function setReceiverId($ReceiverId)
@@ -99,7 +99,7 @@ class TypeMessageHeader
     }
 
     /**
-     * @return TypeUtcDateTime
+     * @return string
      */
     public function getSendingDateTime()
     {
@@ -107,7 +107,7 @@ class TypeMessageHeader
     }
 
     /**
-     * @param TypeUtcDateTime $SendingDateTime
+     * @param string $SendingDateTime
      * @return \Hypor\WebService\TypeMessageHeader
      */
     public function setSendingDateTime($SendingDateTime)
@@ -117,7 +117,7 @@ class TypeMessageHeader
     }
 
     /**
-     * @return TypeMessageId
+     * @return string
      */
     public function getDialogueMessageIdRef()
     {
@@ -125,7 +125,7 @@ class TypeMessageHeader
     }
 
     /**
-     * @param TypeMessageId $DialogueMessageIdRef
+     * @param string $DialogueMessageIdRef
      * @return \Hypor\WebService\TypeMessageHeader
      */
     public function setDialogueMessageIdRef($DialogueMessageIdRef)

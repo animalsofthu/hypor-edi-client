@@ -6,58 +6,58 @@ class TypeMessageListResponseMessage
 {
 
     /**
-     * @var TypeEdiVersion $EdiVersion
+     * @var string $EdiVersion
      */
     protected $EdiVersion = null;
 
     /**
-     * @var TypeMessageCode $MessageCode
+     * @var string $MessageCode
      */
     protected $MessageCode = null;
 
     /**
-     * @var TypeRelationId $RelationId
+     * @var string $RelationId
      */
     protected $RelationId = null;
 
     /**
-     * @var TypeUtcDateTime $CreationDate
+     * @var string $CreationDate
      */
     protected $CreationDate = null;
 
     /**
-     * @var TypeDate $StartDate
+     * @var string $StartDate
      */
     protected $StartDate = null;
 
     /**
-     * @var TypeDate $EndDate
+     * @var string $EndDate
      */
     protected $EndDate = null;
 
     /**
-     * @var TypeApplicationCode $ApplicationCode
+     * @var string $ApplicationCode
      */
     protected $ApplicationCode = null;
 
     /**
-     * @var TypeMessageNumber $MessageNumber
+     * @var string $MessageNumber
      */
     protected $MessageNumber = null;
 
     /**
-     * @var TypeMessageId $MessageId
+     * @var string $MessageId
      */
     protected $MessageId = null;
 
     /**
-     * @param TypeEdiVersion $EdiVersion
-     * @param TypeMessageCode $MessageCode
-     * @param TypeRelationId $RelationId
-     * @param TypeUtcDateTime $CreationDate
-     * @param TypeApplicationCode $ApplicationCode
-     * @param TypeMessageNumber $MessageNumber
-     * @param TypeMessageId $MessageId
+     * @param string $EdiVersion
+     * @param string $MessageCode
+     * @param string $RelationId
+     * @param string $CreationDate
+     * @param string $ApplicationCode
+     * @param string $MessageNumber
+     * @param string $MessageId
      */
     public function __construct($EdiVersion, $MessageCode, $RelationId, $CreationDate, $ApplicationCode, $MessageNumber, $MessageId)
     {
@@ -71,7 +71,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @return TypeEdiVersion
+     * @return string
      */
     public function getEdiVersion()
     {
@@ -79,7 +79,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @param TypeEdiVersion $EdiVersion
+     * @param string $EdiVersion
      * @return \Hypor\WebService\TypeMessageListResponseMessage
      */
     public function setEdiVersion($EdiVersion)
@@ -89,7 +89,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @return TypeMessageCode
+     * @return string
      */
     public function getMessageCode()
     {
@@ -97,7 +97,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @param TypeMessageCode $MessageCode
+     * @param string $MessageCode
      * @return \Hypor\WebService\TypeMessageListResponseMessage
      */
     public function setMessageCode($MessageCode)
@@ -107,7 +107,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @return TypeRelationId
+     * @return string
      */
     public function getRelationId()
     {
@@ -115,7 +115,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @param TypeRelationId $RelationId
+     * @param string $RelationId
      * @return \Hypor\WebService\TypeMessageListResponseMessage
      */
     public function setRelationId($RelationId)
@@ -125,7 +125,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @return TypeUtcDateTime
+     * @return string
      */
     public function getCreationDate()
     {
@@ -133,7 +133,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @param TypeUtcDateTime $CreationDate
+     * @param string $CreationDate
      * @return \Hypor\WebService\TypeMessageListResponseMessage
      */
     public function setCreationDate($CreationDate)
@@ -143,7 +143,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @return TypeDate
+     * @return string
      */
     public function getStartDate()
     {
@@ -151,7 +151,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @param TypeDate $StartDate
+     * @param string $StartDate
      * @return \Hypor\WebService\TypeMessageListResponseMessage
      */
     public function setStartDate($StartDate)
@@ -161,7 +161,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @return TypeDate
+     * @return string
      */
     public function getEndDate()
     {
@@ -169,7 +169,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @param TypeDate $EndDate
+     * @param string $EndDate
      * @return \Hypor\WebService\TypeMessageListResponseMessage
      */
     public function setEndDate($EndDate)
@@ -179,7 +179,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @return TypeApplicationCode
+     * @return string
      */
     public function getApplicationCode()
     {
@@ -187,7 +187,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @param TypeApplicationCode $ApplicationCode
+     * @param string $ApplicationCode
      * @return \Hypor\WebService\TypeMessageListResponseMessage
      */
     public function setApplicationCode($ApplicationCode)
@@ -197,7 +197,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @return TypeMessageNumber
+     * @return string
      */
     public function getMessageNumber()
     {
@@ -205,7 +205,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @param TypeMessageNumber $MessageNumber
+     * @param string $MessageNumber
      * @return \Hypor\WebService\TypeMessageListResponseMessage
      */
     public function setMessageNumber($MessageNumber)
@@ -215,7 +215,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @return TypeMessageId
+     * @return string
      */
     public function getMessageId()
     {
@@ -223,7 +223,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @param TypeMessageId $MessageId
+     * @param string $MessageId
      * @return \Hypor\WebService\TypeMessageListResponseMessage
      */
     public function setMessageId($MessageId)

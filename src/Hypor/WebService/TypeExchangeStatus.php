@@ -6,22 +6,22 @@ class TypeExchangeStatus
 {
 
     /**
-     * @var TypeRelationId $RelationId
+     * @var string $RelationId
      */
     protected $RelationId = null;
 
     /**
-     * @var TypeMessageId $ExchangeStatusIdRef
+     * @var string $ExchangeStatusIdRef
      */
     protected $ExchangeStatusIdRef = null;
 
     /**
-     * @var TypeEdiVersion $EdiVersion
+     * @var string $EdiVersion
      */
     protected $EdiVersion = null;
 
     /**
-     * @var TypeApplicationCode $ApplicationCode
+     * @var string $ApplicationCode
      */
     protected $ApplicationCode = null;
 
@@ -46,10 +46,10 @@ class TypeExchangeStatus
     protected $AnimalSynchronisationsNotToBeDelivered = null;
 
     /**
-     * @param TypeRelationId $RelationId
-     * @param TypeMessageId $ExchangeStatusIdRef
-     * @param TypeEdiVersion $EdiVersion
-     * @param TypeApplicationCode $ApplicationCode
+     * @param string $RelationId
+     * @param string $ExchangeStatusIdRef
+     * @param string $EdiVersion
+     * @param string $ApplicationCode
      * @param MissingMessagesToBeDelivered $MissingMessagesToBeDelivered
      * @param MissingMessagesNotToBeDelivered $MissingMessagesNotToBeDelivered
      * @param AnimalSynchronisationsToBeDelivered $AnimalSynchronisationsToBeDelivered
@@ -68,7 +68,7 @@ class TypeExchangeStatus
     }
 
     /**
-     * @return TypeRelationId
+     * @return string
      */
     public function getRelationId()
     {
@@ -76,7 +76,7 @@ class TypeExchangeStatus
     }
 
     /**
-     * @param TypeRelationId $RelationId
+     * @param string $RelationId
      * @return \Hypor\WebService\TypeExchangeStatus
      */
     public function setRelationId($RelationId)
@@ -86,7 +86,7 @@ class TypeExchangeStatus
     }
 
     /**
-     * @return TypeMessageId
+     * @return string
      */
     public function getExchangeStatusIdRef()
     {
@@ -94,7 +94,7 @@ class TypeExchangeStatus
     }
 
     /**
-     * @param TypeMessageId $ExchangeStatusIdRef
+     * @param string $ExchangeStatusIdRef
      * @return \Hypor\WebService\TypeExchangeStatus
      */
     public function setExchangeStatusIdRef($ExchangeStatusIdRef)
@@ -104,7 +104,7 @@ class TypeExchangeStatus
     }
 
     /**
-     * @return TypeEdiVersion
+     * @return string
      */
     public function getEdiVersion()
     {
@@ -112,7 +112,7 @@ class TypeExchangeStatus
     }
 
     /**
-     * @param TypeEdiVersion $EdiVersion
+     * @param string $EdiVersion
      * @return \Hypor\WebService\TypeExchangeStatus
      */
     public function setEdiVersion($EdiVersion)
@@ -122,7 +122,7 @@ class TypeExchangeStatus
     }
 
     /**
-     * @return TypeApplicationCode
+     * @return string
      */
     public function getApplicationCode()
     {
@@ -130,7 +130,7 @@ class TypeExchangeStatus
     }
 
     /**
-     * @param TypeApplicationCode $ApplicationCode
+     * @param string $ApplicationCode
      * @return \Hypor\WebService\TypeExchangeStatus
      */
     public function setApplicationCode($ApplicationCode)

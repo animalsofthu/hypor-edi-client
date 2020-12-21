@@ -6,12 +6,12 @@ class MissingMessagesNotToBeDelivered
 {
 
     /**
-     * @var TypeMessageNumber $MessageNumber
+     * @var string $MessageNumber
      */
     protected $MessageNumber = null;
 
     /**
-     * @param TypeMessageNumber $MessageNumber
+     * @param string $MessageNumber
      */
     public function __construct($MessageNumber)
     {
@@ -19,7 +19,7 @@ class MissingMessagesNotToBeDelivered
     }
 
     /**
-     * @return TypeMessageNumber
+     * @return string
      */
     public function getMessageNumber()
     {
@@ -27,7 +27,7 @@ class MissingMessagesNotToBeDelivered
     }
 
     /**
-     * @param TypeMessageNumber $MessageNumber
+     * @param string $MessageNumber
      * @return \Hypor\WebService\MissingMessagesNotToBeDelivered
      */
     public function setMessageNumber($MessageNumber)
