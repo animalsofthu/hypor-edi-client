@@ -16,7 +16,7 @@ class TypeMessageListResponseMessage
     protected $MessageCode = null;
 
     /**
-     * @var string $RelationId
+     * @var \Hypor\WebService\TypeRelationId $RelationId
      */
     protected $RelationId = null;
 
@@ -53,7 +53,7 @@ class TypeMessageListResponseMessage
     /**
      * @param string $EdiVersion
      * @param string $MessageCode
-     * @param string $RelationId
+     * @param \Hypor\WebService\TypeRelationId $RelationId
      * @param string $CreationDate
      * @param string $ApplicationCode
      * @param string $MessageNumber
@@ -107,7 +107,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @return string
+     * @return \Hypor\WebService\TypeRelationId
      */
     public function getRelationId()
     {
@@ -115,7 +115,7 @@ class TypeMessageListResponseMessage
     }
 
     /**
-     * @param string $RelationId
+     * @param \Hypor\WebService\TypeRelationId $RelationId
      * @return \Hypor\WebService\TypeMessageListResponseMessage
      */
     public function setRelationId($RelationId)

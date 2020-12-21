@@ -6,7 +6,7 @@ class TypeExchangeStatus
 {
 
     /**
-     * @var string $RelationId
+     * @var \Hypor\WebService\TypeRelationId $RelationId
      */
     protected $RelationId = null;
 
@@ -46,7 +46,7 @@ class TypeExchangeStatus
     protected $AnimalSynchronisationsNotToBeDelivered = null;
 
     /**
-     * @param string $RelationId
+     * @param \Hypor\WebService\TypeRelationId $RelationId
      * @param string $ExchangeStatusIdRef
      * @param string $EdiVersion
      * @param string $ApplicationCode
@@ -68,7 +68,7 @@ class TypeExchangeStatus
     }
 
     /**
-     * @return string
+     * @return \Hypor\WebService\TypeRelationId
      */
     public function getRelationId()
     {
@@ -76,7 +76,7 @@ class TypeExchangeStatus
     }
 
     /**
-     * @param string $RelationId
+     * @param \Hypor\WebService\TypeRelationId $RelationId
      * @return \Hypor\WebService\TypeExchangeStatus
      */
     public function setRelationId($RelationId)

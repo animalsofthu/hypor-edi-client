@@ -70,7 +70,7 @@ class EdiMessage
      * @param string $ExchangeStatusIdRef
      * @param string $Description
      * @param string $EdiVersion
-     * @param string $RelationId
+     * @param \Hypor\WebService\TypeRelationId $RelationId
      * @param string $MessageCode
      * @param string $CreationDate
      * @param string $StartDate
@@ -176,7 +176,7 @@ class EdiMessage
     }
 
     /**
-     * @param string $RelationId
+     * @param \Hypor\WebService\TypeRelationId $RelationId
      * @return \Hypor\WebService\EdiMessage
      */
     public function setRelationId($RelationId)

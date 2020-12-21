@@ -6,7 +6,7 @@ class TypeMessageListRequestRelation
 {
 
     /**
-     * @var string $RelationId
+     * @var \Hypor\WebService\TypeRelationId $RelationId
      */
     protected $RelationId = null;
 
@@ -21,7 +21,7 @@ class TypeMessageListRequestRelation
     protected $ToDate = null;
 
     /**
-     * @param string $RelationId
+     * @param \Hypor\WebService\TypeRelationId $RelationId
      */
     public function __construct($RelationId)
     {
@@ -29,7 +29,7 @@ class TypeMessageListRequestRelation
     }
 
     /**
-     * @return string
+     * @return \Hypor\WebService\TypeRelationId
      */
     public function getRelationId()
     {
@@ -37,7 +37,7 @@ class TypeMessageListRequestRelation
     }
 
     /**
-     * @param string $RelationId
+     * @param \Hypor\WebService\TypeRelationId $RelationId
      * @return \Hypor\WebService\TypeMessageListRequestRelation
      */
     public function setRelationId($RelationId)

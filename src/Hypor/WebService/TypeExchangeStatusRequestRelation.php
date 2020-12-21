@@ -6,12 +6,12 @@ class TypeExchangeStatusRequestRelation
 {
 
     /**
-     * @var string $RelationId
+     * @var \Hypor\WebService\TypeRelationId $RelationId
      */
     protected $RelationId = null;
 
     /**
-     * @param string $RelationId
+     * @param \Hypor\WebService\TypeRelationId $RelationId
      */
     public function __construct($RelationId)
     {
@@ -19,7 +19,7 @@ class TypeExchangeStatusRequestRelation
     }
 
     /**
-     * @return string
+     * @return \Hypor\WebService\TypeRelationId
      */
     public function getRelationId()
     {
@@ -27,7 +27,7 @@ class TypeExchangeStatusRequestRelation
     }
 
     /**
-     * @param string $RelationId
+     * @param \Hypor\WebService\TypeRelationId $RelationId
      * @return \Hypor\WebService\TypeExchangeStatusRequestRelation
      */
     public function setRelationId($RelationId)
