@@ -1,0 +1,19 @@
+{
+    "name": "animalsofthu/hypor-edi-client",
+    "type": "library",
+    "description": "",
+    "keywords": [
+        "swagger",
+        "php",
+        "sdk",
+        "api"
+    ],
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.1",
+        "ext-soap": "*"
+    },
+    "autoload": {
+        "psr-4": { "Hypor\\WebService\\" : "src/" }
+    }
+}
