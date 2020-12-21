@@ -11,13 +11,13 @@ class TypeRelationId
     protected $_ = null;
 
     /**
-     * @var \Hypor\WebService\TypeIdentType $IdentType
+     * @var string $IdentType
      */
     protected $IdentType = null;
 
     /**
      * @param int $_
-     * @param \Hypor\WebService\TypeIdentType $IdentType
+     * @param string $IdentType
      */
     public function __construct($_, $IdentType)
     {
@@ -44,7 +44,7 @@ class TypeRelationId
     }
 
     /**
-     * @return \Hypor\WebService\TypeIdentType
+     * @return string
      */
     public function getIdentType()
     {
@@ -52,7 +52,7 @@ class TypeRelationId
     }
 
     /**
-     * @param \Hypor\WebService\TypeIdentType $IdentType
+     * @param string $IdentType
      * @return \Hypor\WebService\TypeRelationId
      */
     public function setIdentType($IdentType)
