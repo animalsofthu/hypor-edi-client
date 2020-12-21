@@ -11,7 +11,7 @@ class TypegetMessageListRequest
     protected $MessageHeader = null;
 
     /**
-     * @var TypeAuthenticationtoken $Authenticationtoken
+     * @var string $Authenticationtoken
      */
     protected $Authenticationtoken = null;
 
@@ -27,7 +27,7 @@ class TypegetMessageListRequest
 
     /**
      * @param TypeMessageHeader $MessageHeader
-     * @param TypeAuthenticationtoken $Authenticationtoken
+     * @param string $Authenticationtoken
      * @param string $EdiVersion
      * @param TypeMessageListRequestRelation $Relation
      */
@@ -58,7 +58,7 @@ class TypegetMessageListRequest
     }
 
     /**
-     * @return TypeAuthenticationtoken
+     * @return string
      */
     public function getAuthenticationtoken()
     {
@@ -66,7 +66,7 @@ class TypegetMessageListRequest
     }
 
     /**
-     * @param TypeAuthenticationtoken $Authenticationtoken
+     * @param string $Authenticationtoken
      * @return \Hypor\WebService\TypegetMessageListRequest
      */
     public function setAuthenticationtoken($Authenticationtoken)

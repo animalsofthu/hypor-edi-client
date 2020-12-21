@@ -6,7 +6,7 @@ class putMessageRequest
 {
 
     /**
-     * @var TypeAuthenticationtoken $Authenticationtoken
+     * @var string $Authenticationtoken
      */
     protected $Authenticationtoken = null;
 
@@ -16,7 +16,7 @@ class putMessageRequest
     protected $EdiMessage = null;
 
     /**
-     * @param TypeAuthenticationtoken $Authenticationtoken
+     * @param string $Authenticationtoken
      * @param EdiMessage $EdiMessage
      */
     public function __construct($Authenticationtoken, $EdiMessage)
@@ -26,7 +26,7 @@ class putMessageRequest
     }
 
     /**
-     * @return TypeAuthenticationtoken
+     * @return string
      */
     public function getAuthenticationtoken()
     {
@@ -34,7 +34,7 @@ class putMessageRequest
     }
 
     /**
-     * @param TypeAuthenticationtoken $Authenticationtoken
+     * @param string $Authenticationtoken
      * @return \Hypor\WebService\putMessageRequest
      */
     public function setAuthenticationtoken($Authenticationtoken)

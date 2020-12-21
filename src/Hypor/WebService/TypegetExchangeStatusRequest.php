@@ -6,7 +6,7 @@ class TypegetExchangeStatusRequest
 {
 
     /**
-     * @var TypeAuthenticationtoken $Authenticationtoken
+     * @var string $Authenticationtoken
      */
     protected $Authenticationtoken = null;
 
@@ -21,7 +21,7 @@ class TypegetExchangeStatusRequest
     protected $Relation = null;
 
     /**
-     * @param TypeAuthenticationtoken $Authenticationtoken
+     * @param string $Authenticationtoken
      * @param string $EdiVersion
      * @param TypeExchangeStatusRequestRelation $Relation
      */
@@ -33,7 +33,7 @@ class TypegetExchangeStatusRequest
     }
 
     /**
-     * @return TypeAuthenticationtoken
+     * @return string
      */
     public function getAuthenticationtoken()
     {
@@ -41,7 +41,7 @@ class TypegetExchangeStatusRequest
     }
 
     /**
-     * @param TypeAuthenticationtoken $Authenticationtoken
+     * @param string $Authenticationtoken
      * @return \Hypor\WebService\TypegetExchangeStatusRequest
      */
     public function setAuthenticationtoken($Authenticationtoken)

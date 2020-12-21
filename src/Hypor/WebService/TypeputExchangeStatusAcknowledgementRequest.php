@@ -6,7 +6,7 @@ class TypeputExchangeStatusAcknowledgementRequest
 {
 
     /**
-     * @var TypeAuthenticationtoken $Authenticationtoken
+     * @var string $Authenticationtoken
      */
     protected $Authenticationtoken = null;
 
@@ -16,7 +16,7 @@ class TypeputExchangeStatusAcknowledgementRequest
     protected $ExchangeStatus = null;
 
     /**
-     * @param TypeAuthenticationtoken $Authenticationtoken
+     * @param string $Authenticationtoken
      */
     public function __construct($Authenticationtoken)
     {
@@ -24,7 +24,7 @@ class TypeputExchangeStatusAcknowledgementRequest
     }
 
     /**
-     * @return TypeAuthenticationtoken
+     * @return string
      */
     public function getAuthenticationtoken()
     {
@@ -32,7 +32,7 @@ class TypeputExchangeStatusAcknowledgementRequest
     }
 
     /**
-     * @param TypeAuthenticationtoken $Authenticationtoken
+     * @param string $Authenticationtoken
      * @return \Hypor\WebService\TypeputExchangeStatusAcknowledgementRequest
      */
     public function setAuthenticationtoken($Authenticationtoken)
