@@ -53,13 +53,13 @@ class EdiPigsWebservice extends \SoapClient
       }
       $options = array_merge(array (
       'login' => 'EDI-Pigs',
-      'password' => '9dj2al4fd6',
+      'password' => '',
       'trace' => true,
       'stream_context' => NULL,
       'features' => 1,
     ), $options);
       if (!$wsdl) {
-        $wsdl = '/var/www/drupalvm/temp.lonalore.test/web/sandbox/wsdl/input/EdiPigsWebservice.wsdl';
+        $wsdl = '/../../../EdiPigsWebservice.wsdl';
       }
       parent::__construct($wsdl, $options);
     }
