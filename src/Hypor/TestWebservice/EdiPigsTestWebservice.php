@@ -59,7 +59,7 @@ class EdiPigsTestWebservice extends \SoapClient
       'features' => 1,
     ), $options);
       if (!$wsdl) {
-        $wsdl = '/../../../EdiPigsTestWebservice.wsdl';
+        $wsdl = __DIR__ . '/../../../EdiPigsTestWebservice.wsdl';
       }
       parent::__construct($wsdl, $options);
     }
