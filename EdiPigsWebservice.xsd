@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.1.3.1-hudson-749-SNAPSHOT. --><xs:schema xmlns:tns="http://www.eav.nl/Portals/10/XSDs/WS_EDI_Pigs/v2008_2/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://www.eav.nl/Portals/10/XSDs/WS_EDI_Pigs/v2008_2/">
+
+<xs:element name="getExchangeStatusRequestContainer" type="tns:getExchangeStatusRequestContainer"></xs:element>
+
+<xs:element name="getExchangeStatusRequestContainerResponse" type="tns:getExchangeStatusRequestContainerResponse"></xs:element>
+
+<xs:element name="getMessageListRequestContainer" type="tns:getMessageListRequestContainer"></xs:element>
+
+<xs:element name="getMessageListRequestContainerResponse" type="tns:getMessageListRequestContainerResponse"></xs:element>
+
+<xs:element name="getMessageRequest">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Authenticationtoken" type="xs:string"></xs:element>
+<xs:element name="MessageId" type="xs:string"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="getMessageRequestContainer" type="tns:getMessageRequestContainer"></xs:element>
+
+<xs:element name="getMessageRequestContainerResponse" type="tns:getMessageRequestContainerResponse"></xs:element>
+
+<xs:element name="getMessageResponse">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Status" type="tns:TypeStatus"></xs:element>
+<xs:element name="EdiMessage" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="RelationId" type="tns:TypeRelationId"></xs:element>
+<xs:element name="EdiVersion" type="xs:string"></xs:element>
+<xs:element name="MessageId" type="xs:string"></xs:element>
+<xs:element name="MessageContent" type="xs:string"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="putMessageRequestContainer" type="tns:putMessageRequestContainer"></xs:element>
+
+<xs:element name="putMessageRequestContainerResponse" type="tns:putMessageRequestContainerResponse"></xs:element>
+
+<xs:element name="putMessageResponse">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Status" type="tns:TypeStatus"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:complexType name="putMessageRequestContainer">
+<xs:sequence>
+<xs:element name="putMessageRequest" type="tns:TypeputMessageRequest" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypeputMessageRequest">
+<xs:sequence>
+<xs:element name="Authenticationtoken" type="xs:string"></xs:element>
+<xs:element name="EdiMessage" type="tns:typeEdiMessage"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="typeEdiMessage">
+<xs:sequence>
+<xs:element name="MessageId" type="xs:string"></xs:element>
+<xs:element name="EdiVersion" type="xs:string"></xs:element>
+<xs:element name="RelationId" type="tns:TypeRelationId"></xs:element>
+<xs:element name="MessageCode" type="xs:string"></xs:element>
+<xs:element name="CreationDate" type="xs:anySimpleType"></xs:element>
+<xs:element name="StartDate" type="xs:anySimpleType" minOccurs="0"></xs:element>
+<xs:element name="EndDate" type="xs:anySimpleType" minOccurs="0"></xs:element>
+<xs:element name="ApplicationCode" type="xs:string"></xs:element>
+<xs:element name="MessageNumber" type="xs:int"></xs:element>
+<xs:element name="MessageContent" type="xs:string"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypeRelationId">
+<xs:simpleContent>
+<xs:extension base="xs:integer">
+<xs:attribute name="IdentType" type="tns:TypeIdentType" use="required"></xs:attribute>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="putMessageRequestContainerResponse">
+<xs:sequence>
+<xs:element ref="tns:putMessageResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypeStatus">
+<xs:sequence>
+<xs:element name="StatusCode" type="xs:int"></xs:element>
+<xs:element name="StatusText" type="xs:string"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getExchangeStatusRequestContainer">
+<xs:sequence>
+<xs:element name="getExchangeStatusRequest" type="tns:TypegetExchangeStatusRequest" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypegetExchangeStatusRequest">
+<xs:sequence>
+<xs:element name="Authenticationtoken" type="xs:string"></xs:element>
+<xs:element name="EdiVersion" type="xs:string"></xs:element>
+<xs:element name="Relation" type="tns:TypeExchangeStatusRequestRelation"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypeExchangeStatusRequestRelation">
+<xs:sequence>
+<xs:element name="RelationId" type="tns:TypeRelationId"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getExchangeStatusRequestContainerResponse">
+<xs:sequence>
+<xs:element name="getExchangeStatusResponse" type="tns:TypegetExchangeStatusResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypegetExchangeStatusResponse">
+<xs:sequence>
+<xs:element name="Status" type="tns:TypeStatus"></xs:element>
+<xs:element name="ExchangeStatus" type="tns:TypeExchangeStatus" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypeExchangeStatus">
+<xs:sequence>
+<xs:element name="RelationId" type="tns:TypeRelationId"></xs:element>
+<xs:element name="EdiVersion" type="xs:string"></xs:element>
+<xs:element name="ApplicationCode" type="xs:string"></xs:element>
+<xs:element name="SynchronisationIndication" type="tns:TypeSynchronisationIndication" minOccurs="0"></xs:element>
+<xs:element name="MissingMessages" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="MessageNumber" type="xs:int" nillable="true" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="AnimalSynchronisations" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Animal" type="tns:TypeAnimal" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Report" type="tns:TypeStatus"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypeSynchronisationIndication">
+<xs:sequence></xs:sequence>
+<xs:attribute name="Indication" type="xs:string" use="required"></xs:attribute>
+</xs:complexType>
+
+<xs:complexType name="TypeAnimal">
+<xs:sequence>
+<xs:element name="AdminAnimalNumber" type="xs:int"></xs:element>
+<xs:element name="TattooNumber" type="xs:string"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMessageListRequestContainer">
+<xs:sequence>
+<xs:element name="getMessageListRequest" type="tns:TypegetMessageListRequest" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypegetMessageListRequest">
+<xs:sequence>
+<xs:element name="Authenticationtoken" type="xs:string"></xs:element>
+<xs:element name="EdiVersion" type="xs:string"></xs:element>
+<xs:element name="Relation" type="tns:TypeMessageListRequestRelation"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypeMessageListRequestRelation">
+<xs:sequence>
+<xs:element name="RelationId" type="tns:TypeRelationId"></xs:element>
+<xs:element name="FromDate" type="xs:anySimpleType" minOccurs="0"></xs:element>
+<xs:element name="ToDate" type="xs:anySimpleType" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMessageListRequestContainerResponse">
+<xs:sequence>
+<xs:element name="getMessageListResponse" type="tns:TypegetMessageListResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypegetMessageListResponse">
+<xs:sequence>
+<xs:element name="Status" type="tns:TypeStatus"></xs:element>
+<xs:element name="MessageList">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Message" type="tns:TypeMessageListResponseMessage" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TypeMessageListResponseMessage">
+<xs:sequence>
+<xs:element name="EdiVersion" type="xs:string"></xs:element>
+<xs:element name="MessageCode" type="xs:string"></xs:element>
+<xs:element name="RelationId" type="tns:TypeRelationId"></xs:element>
+<xs:element name="CreationDate" type="xs:anySimpleType"></xs:element>
+<xs:element name="StartDate" type="xs:anySimpleType"></xs:element>
+<xs:element name="EndDate" type="xs:anySimpleType"></xs:element>
+<xs:element name="ApplicationCode" type="xs:string"></xs:element>
+<xs:element name="MessageNumber" type="xs:int"></xs:element>
+</xs:sequence>
+<xs:attribute name="MessageId" type="xs:string" use="required"></xs:attribute>
+</xs:complexType>
+
+<xs:complexType name="getMessageRequestContainer">
+<xs:sequence>
+<xs:element ref="tns:getMessageRequest" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMessageRequestContainerResponse">
+<xs:sequence>
+<xs:element ref="tns:getMessageResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="TypeIdentType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="ubnnummer"></xs:enumeration>
+<xs:enumeration value="smsid"></xs:enumeration>
+<xs:enumeration value="ipgnummer"></xs:enumeration>
+<xs:enumeration value="vionrelatienr"></xs:enumeration>
+<xs:enumeration value="relatienummer"></xs:enumeration>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>
