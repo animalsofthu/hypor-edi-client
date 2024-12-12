@@ -6,7 +6,7 @@
 </ns1:Policy>
 <types>
 <xsd:schema>
-<xsd:import namespace="http://www.eav.nl/Portals/10/XSDs/WS_EDI_Pigs/v2008_2/" schemaLocation="http://services.flexybreed.com:80/EdiPigsWebservices/EdiPigsWebservice?xsd=1"></xsd:import>
+<xsd:import namespace="http://www.eav.nl/Portals/10/XSDs/WS_EDI_Pigs/v2008_2/" schemaLocation="EdiPigsWebservice.xsd"></xsd:import>
 </xsd:schema>
 </types>
 <message name="getMessageRequestContainer">
@@ -93,7 +93,7 @@
 </binding>
 <service name="EdiPigsWebservice">
 <port name="EdiPigsWebservicePort" binding="tns:EdiPigsWebservicePortBinding">
-<soap:address location="http://services.flexybreed.com:80/EdiPigsWebservices/EdiPigsWebservice"></soap:address>
+<soap:address location="https://services.flexybreed.com/EdiPigsWebservices/EdiPigsWebservice"></soap:address>
 </port>
 </service>
 </definitions>
